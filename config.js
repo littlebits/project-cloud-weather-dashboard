@@ -1,4 +1,4 @@
-var api = require('littlebits-cloud-http');
+var api = require('@littlebits/cloud-http');
 
 module.exports = {
   output: api.output.defaults({access_token: "XXXXXXXXXXXXXXXXXXXX"}),

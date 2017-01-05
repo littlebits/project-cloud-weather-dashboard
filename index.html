@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> littleBits nextgen cloudBit </title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </head>  
+
+  <style>
+   canvas { display : block; margin : auto; }
+  </style>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">Real-Time Weather Dashboard</h3>
+      </div>
+
+      <div class="row marketing">
+        <form>
+          <div class="form-group">
+            <label for="cloudApiToken">Your Cloud API Token</label>
+            <input type="text" class="form-control" id="cloud_api_token">
+            <p class="help-block">To get your cloudBit's access token
+              and bit ID, look under the bit's settings in Cloud
+              Control.
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="weatherUndergroundKey">Your Weather Underground Key</label>
+            <input type="text" class="form-control" id="weather_underground_key">
+            <label for="weatherUndergroundLocation">Your Location</label>
+            <input type="text" class="form-control" id="weather_underground_location">
+          </div>
+        </form>
+      </div>
+
+      <div class="row marketing">
+        <p class="help-block">Click one of the buttons to fetch a
+          weather report and send the result to your bit.
+        </p>
+        
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="currentTemp">Device Id</label>
+            <input type="text" class="form-control" id="currentTemp">
+          </div>
+          <button type="button" class="btn btn-primary" id="btnCurrentTemp">Current Temperature</button>
+          
+          <div id="alertCurrentTemp"></div>
+        </form>
+        <br />
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="forecastHigh">Device Id</label>
+            <input type="text" class="form-control" id="forecastHigh">
+          </div>
+          <button type="button" class="btn btn-primary" id="btnForecastHigh">Forecast High</button>
+          <div id="alertForecastHigh"></div>
+        </form>
+        <br />
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="forecastLow">Device Id</label>
+            <input type="text" class="form-control" id="forecastLow">
+          </div>
+          <button type="button" class="btn btn-primary" id="btnForecastLow">Forecast Low</button>
+          <div id="alertForecastLow"></div>
+        </form>
+        <br />
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="forecastConditions">Device Id</label>
+            <input type="text" class="form-control" id="forecastConditions">
+          </div>
+          <button type="button" class="btn btn-primary" id="btnForecastConditions">Forecast Conditions</button>
+          <div id="alertForecastConditions"></div>
+        </form>
+      </div>
+
+      <button type="button" class="btn btn-primary" id="btnSave">Save Settings</button>
+      <br />
+      <br />
+      <footer class="footer">
+        <p>&copy; 2011 - 2017 littleBits Electronics Inc.</p>
+      </footer>
+      
+    </div> <!-- /container -->
+  </body>
+</html>
